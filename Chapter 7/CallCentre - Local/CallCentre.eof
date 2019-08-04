@@ -1,0 +1,22 @@
+﻿
+
+[Exception Log]
+EurekaLog Version=8000
+_CustomProfile=""
+Activate=1
+atFixSafeCallException=1
+atFMX=1
+atWin32=1
+DeleteMapAfterCompile=0
+dpJCL=1
+Encrypt Password=""
+idEurekaLog=1
+idEurekaLogDetailed=1
+idMSClassic=1
+idStepsToReproduce=1
+InjectCode=1
+InjectInfo=1
+InjectOptions=1
+loEnableMMDebugMode=1
+ProjectID="{6CF4690D-0C33-49A5-AC22-F31196600102}"
+
