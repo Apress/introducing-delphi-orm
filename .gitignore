@@ -64,3 +64,19 @@ __recovery/
 
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
 *.stat
+Full/
+Chapter 7/CallCentre - Local - Without DBChart/
+Chapter 3/CallCentre - With Database Session/Builds/
+Chapter 4/CallCentre - Import/Builds/
+Chapter 4/CallCentre - With Utilities/Builds/
+Chapter 4/CallCentre - Without Utilities/Builds/
+Chapter 5/CallCentre - Listings/Builds/
+Chapter 5/CallCentre - Queries/Builds/
+Chapter 5/CallCentre - Views/Builds/
+Chapter 6/CallCentre - Inheritance/Builds/
+Chapter 6/CallCentre - TAureliusDataset/Builds/
+*.cbk
+Chapter 7/CallCentre - Local/Builds/
+Chapter 7/Client/Android/
+Chapter 7/Client/Win32/
+Chapter 7/Client/Win64/
