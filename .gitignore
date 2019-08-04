@@ -80,3 +80,4 @@ Chapter 7/CallCentre - Local/Builds/
 Chapter 7/Client/Android/
 Chapter 7/Client/Win32/
 Chapter 7/Client/Win64/
+*.res
