@@ -1,0 +1,67 @@
+object FrameImport: TFrameImport
+  Align = Client
+  Size.Width = 530.000000000000000000
+  Size.Height = 164.000000000000000000
+  Size.PlatformDefault = False
+  object Layout21: TLayout
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 67.000000000000000000
+    Size.Width = 510.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btImport: TButton
+      Align = Left
+      Size.Width = 113.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Import Data'
+    end
+  end
+  object pbImport: TProgressBar
+    Align = Top
+    Orientation = Horizontal
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 37.000000000000000000
+    Size.Width = 510.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lbImport: TLabel
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 510.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Idle'
+    TabOrder = 2
+  end
+  object lbTime: TLabel
+    Align = Top
+    StyledSettings = [Family, Size, FontColor]
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 99.000000000000000000
+    Size.Width = 510.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00040000000200000004000000}
+    Text = 'Not started yet'
+    TabOrder = 3
+  end
+end

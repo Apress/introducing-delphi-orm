@@ -1,0 +1,112 @@
+object FormEntity: TFormEntity
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Form2'
+  ClientHeight = 232
+  ClientWidth = 588
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lbTitle: TLabel
+    Align = Top
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 568.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'lbTitle'
+    TabOrder = 0
+  end
+  object Layout1: TLayout
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 568.000000000000000000
+    Size.Height = 108.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lbID: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'ID'
+      TabOrder = 1
+    end
+    object edCode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      ReadOnly = True
+      Position.X = 160.000000000000000000
+      Position.Y = 16.000000000000000000
+      Enabled = False
+      Size.Width = 393.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edEntity: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 160.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 393.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      OnChangeTracking = edEntityChangeTracking
+    end
+    object lbEntity: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 16.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Entity'
+      TabOrder = 0
+    end
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 177.000000000000000000
+    Size.Width = 568.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btCancel: TButton
+      ModalResult = 2
+      Position.X = 472.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Cancel'
+    end
+    object btAction: TButton
+      Enabled = False
+      ModalResult = 1
+      Position.X = 384.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Action'
+    end
+  end
+end
