@@ -1,0 +1,366 @@
+inherited FormMain_XLgXhdpiTb: TFormMain_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 800.000000000000000000
+    Size.Height = 1245.000000000000000000
+    TabHeight = 49.000000000000000000
+    Sizes = (
+      800s
+      1196s
+      800s
+      1196s
+      800s
+      1196s
+      800s
+      1196s)
+    inherited tiDashboard: TTabItem
+      Size.Width = 200.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 78.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited Layout11: TLayout
+        Size.Height = 1196.000000000000000000
+        inherited Rectangle1: TRectangle
+          Size.Height = 936.000000000000000000
+        end
+      end
+      inherited Layout12: TLayout
+        Size.Width = 735.000000000000000000
+        Size.Height = 1196.000000000000000000
+        inherited GridPanelLayout1: TGridPanelLayout
+          Size.Width = 735.000000000000000000
+          inherited Layout7: TLayout
+            Size.Width = 147.000000000000000000
+            inherited lbTotalCalls: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited lbTotalCallsValue: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited Layout8: TLayout
+            Size.Width = 147.000000000000000000
+            inherited lbAnswerSpeed: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited lbAnswerSpeedValue: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited Layout9: TLayout
+            Size.Width = 147.000000000000000000
+            inherited lbAbandonRate: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited lbAbandonRateValue: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited Layout10: TLayout
+            Size.Width = 147.000000000000000000
+            inherited lbCallsMinute: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited lbCallsMinuteValue: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+          inherited Layout13: TLayout
+            Size.Width = 147.000000000000000000
+            inherited lbSatisfaction: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited lbSatisfactionValue: TLabel
+              Size.Width = 147.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+        inherited GridPanelLayout2: TGridPanelLayout
+          Size.Width = 735.000000000000000000
+          Size.Height = 1091.000000000000000000
+          inherited sgDashboardAgents: TStringGrid
+            Size.Width = 347.500000000000000000
+            Size.Height = 525.500000000000000000
+            Viewport.Width = 347.500000000000000000
+            Viewport.Height = 525.500000000000000000
+            inherited scDashboardAgentsTotalCalls: TStringColumn
+              Size.Width = 70.000000000000000000
+            end
+            inherited scDashboardAgentsCallsAnswered: TStringColumn
+              Size.Width = 95.000000000000000000
+            end
+            inherited scDashboardAgentsSpeedAnswer: TStringColumn
+              Size.Width = 110.000000000000000000
+            end
+            inherited scDashboardAgentsCRTrend: TStringColumn
+              Size.Width = 70.000000000000000000
+            end
+          end
+          inherited Layout14: TLayout
+            Size.Width = 347.500000000000000000
+            Size.Height = 525.500000000000000000
+            inherited Rectangle2: TRectangle
+              Size.Width = 347.500000000000000000
+              inherited Label1: TLabel
+                Size.Width = 327.500000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+            inherited Layout15: TLayout
+              Size.Width = 347.500000000000000000
+              inherited lbAnsweredLess180: TLabel
+                Size.Width = 155.500000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lbAnsweredLess180Value: TLabel
+                Position.X = 155.500000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+            inherited Layout16: TLayout
+              Size.Width = 347.500000000000000000
+              inherited lbSatisfactionScoreLess3: TLabel
+                Size.Width = 155.500000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lbSatisfactionScoreLess3Value: TLabel
+                Position.X = 155.500000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+          inherited ctSatisfactionScore: TDBChart
+            Foot.Font.StyleExt = {00040000000200000004000000}
+            SubFoot.Font.StyleExt = {00040000000200000004000000}
+            Title.Font.StyleExt = {00070000000000000004000000}
+            Legend.Title.Font.StyleExt = {00070000000000000004000000}
+            Size.Width = 347.500000000000000000
+            Size.Height = 525.500000000000000000
+          end
+          inherited ctAbandonRate: TDBChart
+            Foot.Font.StyleExt = {00040000000200000004000000}
+            SubFoot.Font.StyleExt = {00040000000200000004000000}
+            Title.Font.StyleExt = {00070000000000000004000000}
+            Legend.Title.Font.StyleExt = {00070000000000000004000000}
+            Size.Width = 347.500000000000000000
+            Size.Height = 525.500000000000000000
+          end
+        end
+      end
+    end
+    inherited tiDepartments: TTabItem
+      Size.Width = 200.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 89.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited Layout4: TLayout
+        Size.Width = 800.000000000000000000
+        inherited sgDepartments: TStringGrid
+          Size.Width = 790.000000000000000000
+          Viewport.Width = 790.000000000000000000
+          Viewport.Height = 229.000000000000000000
+          inherited scDepartmentNr: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          inherited scDepartmentDescription: TStringColumn
+            Size.Width = 558.000000000000000000
+          end
+          inherited scDepartmentID: TStringColumn
+            Size.Width = 300.000000000000000000
+          end
+        end
+        inherited Layout5: TLayout
+          Size.Width = 800.000000000000000000
+          inherited lbDepartmentTime: TLabel
+            Position.X = 634.705810546875000000
+          end
+        end
+      end
+      inherited Layout6: TLayout
+        Size.Width = 800.000000000000000000
+        Size.Height = 915.000000000000000000
+        inherited sgDepartmentDetails: TStringGrid
+          Size.Width = 790.000000000000000000
+          Size.Height = 895.000000000000000000
+          Viewport.Width = 790.000000000000000000
+          Viewport.Height = 895.000000000000000000
+          inherited scDepartmentDetailsNr: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          inherited scDepartmentDetailsCallID: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          inherited scDepartmentDetailsDate: TDateColumn
+            Size.Width = 70.000000000000000000
+          end
+          inherited scDepartmentDetailsEntry: TTimeColumn
+            Size.Width = 70.000000000000000000
+          end
+          inherited scDepartmentDetailsWaiting: TTimeColumn
+            Size.Width = 80.000000000000000000
+          end
+          inherited scDepartmentDetailsDuration: TTimeColumn
+            Size.Width = 80.000000000000000000
+          end
+        end
+        inherited lbDepartmentDetailsNoEntries: TLabel
+          Size.Width = 800.000000000000000000
+          Size.Height = 915.000000000000000000
+        end
+      end
+    end
+    inherited tiAgents: TTabItem
+      Size.Width = 200.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 58.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited Layout2: TLayout
+        Size.Width = 800.000000000000000000
+        inherited Layout1: TLayout
+          Size.Width = 800.000000000000000000
+          inherited btAddAgent: TButton
+            Size.Width = 73.000000000000000000
+            Size.PlatformDefault = False
+          end
+          inherited btEditAgent: TButton
+            Position.X = 88.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.PlatformDefault = False
+          end
+          inherited btDeleteAgent: TButton
+            Position.X = 171.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.PlatformDefault = False
+          end
+          inherited lbAgentTime: TLabel
+            Position.X = 635.000000000000000000
+          end
+        end
+        inherited Layout17: TLayout
+          Size.Width = 800.000000000000000000
+          inherited sgAgents: TStringGrid
+            Size.Width = 442.000000000000000000
+            Viewport.Width = 442.000000000000000000
+            Viewport.Height = 229.000000000000000000
+            inherited scAgentNr: TStringColumn
+              Size.Width = 50.000000000000000000
+            end
+            inherited scAgentDescriptionn: TStringColumn
+              Size.Width = 558.000000000000000000
+            end
+            inherited scAgentID: TStringColumn
+              Size.Width = 140.000000000000000000
+            end
+          end
+          inherited Layout18: TLayout
+            Position.X = 462.000000000000000000
+            inherited Layout20: TLayout
+              inherited Label4: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lbCreateUser: TLabel
+                StyledSettings = [Family, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+              end
+              inherited Label5: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lbCreateTS: TLabel
+                StyledSettings = [Family, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+              end
+              inherited Label9: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lbModifyTS: TLabel
+                StyledSettings = [Family, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+              end
+              inherited Label8: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited lbModifyUser: TLabel
+                StyledSettings = [Family, FontColor]
+                TextSettings.Font.Size = 10.000000000000000000
+              end
+            end
+          end
+        end
+      end
+      inherited Layout3: TLayout
+        Size.Width = 800.000000000000000000
+        Size.Height = 915.000000000000000000
+        inherited sgAgentDetails: TStringGrid
+          Size.Width = 790.000000000000000000
+          Size.Height = 895.000000000000000000
+          Viewport.Width = 790.000000000000000000
+          Viewport.Height = 895.000000000000000000
+          inherited scAgentDetailsNr: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          inherited scAgentDetailsCallID: TStringColumn
+            Size.Width = 50.000000000000000000
+          end
+          inherited scAgentDetailsDate: TDateColumn
+            Size.Width = 70.000000000000000000
+          end
+          inherited scAgentDetailsEntry: TTimeColumn
+            Size.Width = 70.000000000000000000
+          end
+          inherited scAgentDetailsWaiting: TTimeColumn
+            Size.Width = 80.000000000000000000
+          end
+          inherited scAgentDetailsDuration: TTimeColumn
+            Size.Width = 80.000000000000000000
+          end
+        end
+        inherited lbAgentDetailsNoEntries: TLabel
+          Size.Width = 800.000000000000000000
+          Size.Height = 915.000000000000000000
+        end
+      end
+    end
+    inherited tiImport: TTabItem
+      Size.Width = 200.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 56.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited FrameImport: TFrameImport
+        Size.Width = 800.000000000000000000
+        Size.Height = 1196.000000000000000000
+        inherited Layout21: TLayout
+          Position.Y = 57.000000000000000000
+          Size.Width = 780.000000000000000000
+          Size.Height = 36.000000000000000000
+          inherited btImport: TButton
+            Size.Height = 36.000000000000000000
+          end
+        end
+        inherited pbImport: TProgressBar
+          Size.Width = 780.000000000000000000
+          Size.Height = 10.000000000000000000
+        end
+        inherited lbImport: TLabel
+          Size.Width = 780.000000000000000000
+        end
+        inherited lbTime: TLabel
+          Position.Y = 103.000000000000000000
+          Size.Width = 780.000000000000000000
+          TextSettings.Font.StyleExt = {00040000000200000004000000}
+        end
+      end
+    end
+  end
+end
