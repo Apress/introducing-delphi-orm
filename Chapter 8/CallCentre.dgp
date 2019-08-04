@@ -1,0 +1,917 @@
+object AppMetaData: TAppMetaData
+  VersionControlPath = '%projectdir%\versions'
+  VersionControl = <
+    item
+      VersionID = 1
+      DateTime = 43547.516745219910000000
+    end>
+  DataDictionary.DatabaseTypeID = 'sqlite3'
+  DataDictionary.NextTableID = 7
+  DataDictionary.NextFieldID = 39
+  DataDictionary.NextConstraintID = 1
+  DataDictionary.NextIndexID = 1
+  DataDictionary.NextRelationshipID = 3
+  DataDictionary.Domains = <>
+  DataDictionary.Tables = <
+    item
+      TableName = 'Department'
+      TID = 1
+      OidIndex = 0
+      Fields = <
+        item
+          FieldName = 'ID'
+          DataTypeName = 'Guid'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 1
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Description'
+          DataTypeName = 'VarChar'
+          Size = 255
+          Size2 = 0
+          Required = True
+          FID = 2
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end>
+      Indexes = <>
+      Constraints = <>
+      Triggers = <>
+      PrimaryKeyIndex.IndexName = 'PrimaryKey1'
+      PrimaryKeyIndex.IndexType = itNone
+      PrimaryKeyIndex.IndexOrder = ioAscending
+      PrimaryKeyIndex.IID = 0
+      PrimaryKeyIndex.IFields = <
+        item
+          FieldIndex = 0
+          FieldOrder = ioAsc
+          KeyByRelationship = False
+        end>
+    end
+    item
+      TableName = 'Agent'
+      TID = 2
+      OidIndex = 0
+      Fields = <
+        item
+          FieldName = 'ID'
+          DataTypeName = 'Guid'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 3
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Description'
+          DataTypeName = 'VarChar'
+          Size = 255
+          Size2 = 0
+          Required = True
+          FID = 4
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Photo'
+          DataTypeName = 'Blob'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 17
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end>
+      Indexes = <>
+      Constraints = <>
+      Triggers = <>
+      PrimaryKeyIndex.IndexName = 'PrimaryKey2'
+      PrimaryKeyIndex.IndexType = itNone
+      PrimaryKeyIndex.IndexOrder = ioAscending
+      PrimaryKeyIndex.IID = 0
+      PrimaryKeyIndex.IFields = <
+        item
+          FieldIndex = 0
+          FieldOrder = ioAsc
+          KeyByRelationship = False
+        end>
+    end
+    item
+      TableName = 'Call'
+      TID = 3
+      OidIndex = 0
+      Fields = <
+        item
+          FieldName = 'ID'
+          DataTypeName = 'Guid'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 5
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Date'
+          DataTypeName = 'Date'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 6
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'QueueEntryTime'
+          DataTypeName = 'Time'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 7
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'QueueExitTime'
+          DataTypeName = 'Time'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 8
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'ServiceStartTime'
+          DataTypeName = 'Time'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 9
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'ServiceEndTime'
+          DataTypeName = 'Time'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 10
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Answered'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 11
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Resolved'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 12
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'SatisfactionScore'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 13
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'AgentID'
+          DataTypeName = 'Guid'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 14
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'DepartmentID'
+          DataTypeName = 'Guid'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 15
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'CallID'
+          DataTypeName = 'VarChar'
+          Size = 50
+          Size2 = 0
+          Required = True
+          FID = 16
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Week'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 18
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end>
+      Indexes = <>
+      Constraints = <>
+      Triggers = <>
+      PrimaryKeyIndex.IndexName = 'PrimaryKey3'
+      PrimaryKeyIndex.IndexType = itNone
+      PrimaryKeyIndex.IndexOrder = ioAscending
+      PrimaryKeyIndex.IID = 0
+      PrimaryKeyIndex.IFields = <
+        item
+          FieldIndex = 0
+          FieldOrder = ioAsc
+          KeyByRelationship = False
+        end>
+    end
+    item
+      TableName = 'OverallStatistics'
+      TID = 4
+      OidIndex = 0
+      Fields = <
+        item
+          FieldName = 'Week'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 28
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'SatisfactionScore'
+          DataTypeName = 'Float'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 20
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'TotalCalls'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 21
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'AnswerSpeed'
+          DataTypeName = 'Float'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 27
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'AbandonRate'
+          DataTypeName = 'Float'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 22
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'CallsMinute'
+          DataTypeName = 'Float'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 23
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'CallsLess180'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 24
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'CallsLess3'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 25
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'CallsLess3Perc'
+          DataTypeName = 'Float'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 26
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end>
+      Indexes = <>
+      Constraints = <>
+      Triggers = <>
+      PrimaryKeyIndex.IndexName = 'PrimaryKey4'
+      PrimaryKeyIndex.IndexType = itNone
+      PrimaryKeyIndex.IndexOrder = ioAscending
+      PrimaryKeyIndex.IID = 0
+      PrimaryKeyIndex.IFields = <
+        item
+          FieldIndex = 0
+          FieldOrder = ioAsc
+          KeyByRelationship = False
+        end>
+    end
+    item
+      TableName = 'Base'
+      TID = 5
+      OidIndex = 0
+      Fields = <
+        item
+          FieldName = 'ID'
+          DataTypeName = 'Guid'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 29
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'CreateUser'
+          DataTypeName = 'VarChar'
+          Size = 50
+          Size2 = 0
+          Required = False
+          FID = 33
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'CreateTS'
+          DataTypeName = 'Datetime'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 30
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'ModifyUser'
+          DataTypeName = 'VarChar'
+          Size = 50
+          Size2 = 0
+          Required = False
+          FID = 35
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'ModifyTS'
+          DataTypeName = 'Datetime'
+          Size = 0
+          Size2 = 0
+          Required = False
+          FID = 31
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end>
+      Indexes = <>
+      Constraints = <>
+      Triggers = <>
+      PrimaryKeyIndex.IndexName = 'PrimaryKey5'
+      PrimaryKeyIndex.IndexType = itNone
+      PrimaryKeyIndex.IndexOrder = ioAscending
+      PrimaryKeyIndex.IID = 0
+      PrimaryKeyIndex.IFields = <
+        item
+          FieldIndex = 0
+          FieldOrder = ioAsc
+          KeyByRelationship = False
+        end>
+    end
+    item
+      TableName = 'AbandonRatePerDepartment'
+      TID = 6
+      OidIndex = 0
+      Fields = <
+        item
+          FieldName = 'Week'
+          DataTypeName = 'Integer'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 36
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'Description'
+          DataTypeName = 'VarChar'
+          Size = 300
+          Size2 = 0
+          Required = True
+          FID = 37
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end
+        item
+          FieldName = 'AbandonRate'
+          DataTypeName = 'Float'
+          Size = 0
+          Size2 = 0
+          Required = True
+          FID = 38
+          DefaultValueSpecific = False
+          RequiredSpecific = False
+          ConstraintExprSpecific = False
+          SeedValue = 0
+          IncrementValue = 1
+          GeneratedByRelationship = False
+        end>
+      Indexes = <>
+      Constraints = <>
+      Triggers = <>
+      PrimaryKeyIndex.IndexName = 'PrimaryKey6'
+      PrimaryKeyIndex.IndexType = itNone
+      PrimaryKeyIndex.IndexOrder = ioAscending
+      PrimaryKeyIndex.IID = 0
+      PrimaryKeyIndex.IFields = <
+        item
+          FieldIndex = 0
+          FieldOrder = ioAsc
+          KeyByRelationship = False
+        end>
+    end>
+  DataDictionary.Relationships = <
+    item
+      RelationshipName = 'Agent_Call'
+      ParentTableIndex = 1
+      ChildTableIndex = 2
+      UpdateMethod = umCascade
+      DeleteMethod = dmRestrict
+      RelID = 1
+      FieldLinks = <
+        item
+          ParentFieldName = 'ID'
+          ChildFieldName = 'AgentID'
+        end>
+      ParentIndexID = 0
+      RelationshipType = ryNonIdentifying
+    end
+    item
+      RelationshipName = 'Department_Call'
+      ParentTableIndex = 0
+      ChildTableIndex = 2
+      UpdateMethod = umCascade
+      DeleteMethod = dmRestrict
+      RelID = 2
+      FieldLinks = <
+        item
+          ParentFieldName = 'ID'
+          ChildFieldName = 'DepartmentID'
+        end>
+      ParentIndexID = 0
+      RelationshipType = ryNonIdentifying
+    end>
+  DataDictionary.Categories = <
+    item
+      CategoryType = ctView
+      Objects = <
+        item
+          ObjectName = 'OverallStatistics'
+          CreateImplementation = 
+            'CREATE VIEW OverallStatistics AS select'#13#10'    Week,'#13#10'    '#13#10'    av' +
+            'g(SatisfactionScore) as SatisfactionScore,'#13#10'    '#13#10'    Count(*) a' +
+            's TotalCalls,'#13#10'    '#13#10'    (Avg( case '#13#10'              when QueueEx' +
+            'itTime is not null then QueueExitTime - QueueEntryTime '#13#10'       ' +
+            '             end )) as AnswerSpeed,'#13#10'    '#13#10'    (Count( case '#13#10'  ' +
+            '                when QueueExitTime is null then 1 '#13#10'            ' +
+            '        end ) * 100.0 ) / count(*) as AbandonRate,'#13#10'  '#13#10'    (Cou' +
+            'nt(*) / 9.00 / 60.00) as CallsMinute,'#13#10'    '#13#10'    (Count ( case'#13#10 +
+            '               when (QueueExitTime is not null) and ((QueueExitT' +
+            'ime - QueueEntryTime) < 0.00208333333333333) then 1'#13#10'           ' +
+            '          end )) as CallsLess180,'#13#10'    '#13#10'    (Count( case '#13#10'    ' +
+            '          when SatisfactionScore < 3 then 1 '#13#10'                  ' +
+            '  end )) as CallsLess3,'#13#10'    '#13#10'    (Count( case '#13#10'              ' +
+            'when SatisfactionScore < 3 then 1 '#13#10'                    end ) * ' +
+            '100.0 / count(*) ) as CallsLess3Perc                    '#13#10'    '#13#10 +
+            'from'#13#10'  Call'#13#10'    '#13#10'GROUP BY'#13#10'  Week;'
+        end>
+    end>
+  DiagramObj.Diagrams = <
+    item
+      DiagramName = 'Main Diagram'
+      DiagramString = 
+        'object TDiagramClass'#13#10'  NettoExportOffset = 3'#13#10'  AutomaticNodes ' +
+        '= False'#13#10'  AutoScroll = True'#13#10'  Background.Scroll = True'#13#10'  Back' +
+        'ground.Style = biTile'#13#10'  Background.Visible = False'#13#10'  Backgroun' +
+        'd.Gradient.Direction = grTopBottom'#13#10'  Background.Gradient.StartC' +
+        'olor = clWhite'#13#10'  Background.Gradient.EndColor = clYellow'#13#10'  Bac' +
+        'kground.Gradient.Visible = False'#13#10'  Background.PrintGradient = F' +
+        'alse'#13#10'  SnapGrid.Active = False'#13#10'  SnapGrid.Force = False'#13#10'  Sna' +
+        'pGrid.Visible = False'#13#10'  SnapGrid.SizeX = 8.000000000000000000'#13#10 +
+        '  SnapGrid.SizeY = 8.000000000000000000'#13#10'  SnapGrid.Style = gsDo' +
+        'ts'#13#10'  SnapGrid.SnapToRuler = False'#13#10'  LeftRuler.Visible = False'#13 +
+        #10'  LeftRuler.Divisions = 5'#13#10'  LeftRuler.Font.Charset = DEFAULT_C' +
+        'HARSET'#13#10'  LeftRuler.Font.Color = clWindowText'#13#10'  LeftRuler.Font.' +
+        'Height = -9'#13#10'  LeftRuler.Font.Name = '#39'Arial'#39#13#10'  LeftRuler.Font.S' +
+        'tyle = []'#13#10'  LeftRuler.Units = unCenti'#13#10'  LeftRuler.MinorTickLen' +
+        'gth = 4'#13#10'  LeftRuler.MajorTickLength = 6'#13#10'  LeftRuler.Color = cl' +
+        'White'#13#10'  LeftRuler.TickColor = clBlack'#13#10'  LeftRuler.Size = 16'#13#10' ' +
+        ' LeftRuler.AutoFactor = True'#13#10'  LeftRuler.GridColor = clBlack'#13#10' ' +
+        ' TopRuler.Visible = False'#13#10'  TopRuler.Divisions = 5'#13#10'  TopRuler.' +
+        'Font.Charset = DEFAULT_CHARSET'#13#10'  TopRuler.Font.Color = clWindow' +
+        'Text'#13#10'  TopRuler.Font.Height = -9'#13#10'  TopRuler.Font.Name = '#39'Arial' +
+        #39#13#10'  TopRuler.Font.Style = []'#13#10'  TopRuler.Units = unCenti'#13#10'  Top' +
+        'Ruler.MinorTickLength = 4'#13#10'  TopRuler.MajorTickLength = 6'#13#10'  Top' +
+        'Ruler.Color = clWhite'#13#10'  TopRuler.TickColor = clBlack'#13#10'  TopRule' +
+        'r.Size = 16'#13#10'  TopRuler.AutoFactor = True'#13#10'  TopRuler.GridColor ' +
+        '= clBlack'#13#10'  Zoom = 100'#13#10'  BorderColor = clGray'#13#10'  MouseWheelMod' +
+        'e = mwVertical'#13#10'  ActiveLayers = 0'#13#10'  Layers = <>'#13#10'  LinkCursor ' +
+        '= crHandPoint'#13#10'  PanCursor = crHandPoint'#13#10'  ZoomCursor = crDefau' +
+        'lt'#13#10'  IgnoreScreenDPI = False'#13#10'  ShowCrossIndicators = False'#13#10'  ' +
+        'KeyActions = [kaEscape, kaMove, kaPage, kaResize, kaSelect]'#13#10'  S' +
+        'moothMode = smAntiAlias'#13#10'  TextRenderingMode = tmAntiAlias'#13#10'  Se' +
+        'lectionMode = slmMultiple'#13#10'  CanMoveOutOfBounds = True'#13#10'  PageSe' +
+        'ttings.PaperName = '#39'A4'#39#13#10'  PageSettings.PaperId = 9'#13#10'  PageSetti' +
+        'ngs.PaperWidth = 210.015666666666700000'#13#10'  PageSettings.PaperHei' +
+        'ght = 297.010666666666700000'#13#10'  PageSettings.Orientation = dpoPo' +
+        'rtrait'#13#10'  PageSettings.LeftMarginStr = '#39'25.4'#39#13#10'  PageSettings.To' +
+        'pMarginStr = '#39'25.4'#39#13#10'  PageSettings.RightMarginStr = '#39'25.4'#39#13#10'  P' +
+        'ageSettings.BottomMarginStr = '#39'25.4'#39#13#10'  RulerAutoUnit = False'#13#10' ' +
+        ' BorderStyle = bsNone'#13#10'  Color = clWhite'#13#10'  ParentColor = False'#13 +
+        #10'  DisplayRelationshipNames = False'#13#10'  LinkRelationshipsToFields' +
+        ' = False'#13#10'  ShowCaptions = False'#13#10'  StraightRelationshipLines = ' +
+        'True'#13#10'  object TableDiagramBlock1: TTableDiagramBlock'#13#10'    Left ' +
+        '= 37.000000000000000000'#13#10'    Top = 32.000000000000000000'#13#10'    Wi' +
+        'dth = 88.000000000000000000'#13#10'    Height = 60.000000000000000000'#13 +
+        #10'    CornerRadius = 25.000000000000000000'#13#10'    Collapsed = False' +
+        #13#10'    TID = 1'#13#10'  end'#13#10'  object TableDiagramBlock2: TTableDiagram' +
+        'Block'#13#10'    Left = 417.000000000000000000'#13#10'    Top = 33.000000000' +
+        '000000000'#13#10'    Width = 88.000000000000000000'#13#10'    Height = 78.00' +
+        '0000000000000000'#13#10'    CornerRadius = 25.000000000000000000'#13#10'    ' +
+        'Collapsed = False'#13#10'    TID = 2'#13#10'  end'#13#10'  object TableDiagramBloc' +
+        'k3: TTableDiagramBlock'#13#10'    Left = 185.000000000000000000'#13#10'    T' +
+        'op = 162.000000000000000000'#13#10'    Width = 118.000000000000000000'#13 +
+        #10'    Height = 258.000000000000000000'#13#10'    CornerRadius = 25.0000' +
+        '00000000000000'#13#10'    Collapsed = False'#13#10'    TID = 3'#13#10'  end'#13#10'  obj' +
+        'ect RelationshipDiagramLine1: TRelationshipDiagramLine'#13#10'    Pen.' +
+        'Style = psDot'#13#10'    SourceArrow.Shape = asNone'#13#10'    SourceArrow.W' +
+        'idth = 10'#13#10'    SourceArrow.Height = 10'#13#10'    SourceArrow.Brush.Co' +
+        'lor = clBlack'#13#10'    TargetArrow.Shape = asNone'#13#10'    TargetArrow.W' +
+        'idth = 10'#13#10'    TargetArrow.Height = 10'#13#10'    TargetArrow.Brush.Co' +
+        'lor = clBlack'#13#10'    Cursor = crDefault'#13#10'    TextCells = <'#13#10'      ' +
+        'item'#13#10'        DControlAngle = True'#13#10'        Left = 216.000000000' +
+        '000000000'#13#10'        Top = 117.000000000000000000'#13#10'        Width =' +
+        ' 300.000000000000000000'#13#10'        Height = 100.000000000000000000' +
+        #13#10'        Clip = False'#13#10'        WordWrap = True'#13#10'        DContro' +
+        'lFont = True'#13#10'        Alignment = taCenter'#13#10'        VertAlign = ' +
+        'vaTop'#13#10'        RotateFont = True'#13#10'        CellFrame.Color = clWh' +
+        'ite'#13#10'        CellFrame.Pen.Style = psClear'#13#10'        CellFrame.Tr' +
+        'ansparent = False'#13#10'        CellFrame.AutoFrame = True'#13#10'        C' +
+        'ellFrame.AutoFrameMargin = 0'#13#10'        CellFrame.Visible = True'#13#10 +
+        '        Visible = True'#13#10'        ReadOnly = False'#13#10'        Transp' +
+        'arency = 0'#13#10'      end'#13#10'      item'#13#10'        DControlAngle = True'#13 +
+        #10'        Left = 292.638853347893600000'#13#10'        Top = 32.4369427' +
+        '68980940000'#13#10'        Width = 400.000000000000000000'#13#10'        Hei' +
+        'ght = 100.000000000000000000'#13#10'        Clip = False'#13#10'        Word' +
+        'Wrap = True'#13#10'        DControlFont = True'#13#10'        Alignment = ta' +
+        'LeftJustify'#13#10'        VertAlign = vaBottom'#13#10'        RotateFont = ' +
+        'True'#13#10'        CellFrame.Color = clWhite'#13#10'        CellFrame.Trans' +
+        'parent = True'#13#10'        CellFrame.AutoFrame = False'#13#10'        Cell' +
+        'Frame.AutoFrameMargin = 0'#13#10'        CellFrame.Visible = False'#13#10'  ' +
+        '      Visible = True'#13#10'        ReadOnly = False'#13#10'        Transpar' +
+        'ency = 0'#13#10'      end'#13#10'      item'#13#10'        DControlAngle = True'#13#10' ' +
+        '       Left = 40.266242206448570000'#13#10'        Top = 20.6267516602' +
+        '96550000'#13#10'        Width = 400.000000000000000000'#13#10'        Height' +
+        ' = 100.000000000000000000'#13#10'        Clip = False'#13#10'        WordWra' +
+        'p = True'#13#10'        DControlFont = True'#13#10'        Alignment = taRig' +
+        'htJustify'#13#10'        VertAlign = vaBottom'#13#10'        RotateFont = Tr' +
+        'ue'#13#10'        CellFrame.Color = clWhite'#13#10'        CellFrame.Transpa' +
+        'rent = True'#13#10'        CellFrame.AutoFrame = False'#13#10'        CellFr' +
+        'ame.AutoFrameMargin = 0'#13#10'        CellFrame.Visible = False'#13#10'    ' +
+        '    Visible = True'#13#10'        ReadOnly = False'#13#10'        Transparen' +
+        'cy = 0'#13#10'      end'#13#10'      item'#13#10'        DControlAngle = True'#13#10'   ' +
+        '     Left = 294.233757793551400000'#13#10'        Top = 152.3732483397' +
+        '03500000'#13#10'        Width = 399.999999999999900000'#13#10'        Height' +
+        ' = 100.000000000000000000'#13#10'        Clip = False'#13#10'        WordWra' +
+        'p = True'#13#10'        DControlFont = True'#13#10'        Alignment = taLef' +
+        'tJustify'#13#10'        VertAlign = vaTop'#13#10'        RotateFont = True'#13#10 +
+        '        CellFrame.Color = clWhite'#13#10'        CellFrame.Transparent' +
+        ' = True'#13#10'        CellFrame.AutoFrame = False'#13#10'        CellFrame.' +
+        'AutoFrameMargin = 0'#13#10'        CellFrame.Visible = False'#13#10'        ' +
+        'Visible = True'#13#10'        ReadOnly = False'#13#10'        Transparency =' +
+        ' 0'#13#10'      end'#13#10'      item'#13#10'        DControlAngle = True'#13#10'       ' +
+        ' Left = 41.861146652106410000'#13#10'        Top = 140.563057231019100' +
+        '000'#13#10'        Width = 400.000000000000000000'#13#10'        Height = 10' +
+        '0.000000000000000000'#13#10'        Clip = False'#13#10'        WordWrap = T' +
+        'rue'#13#10'        DControlFont = True'#13#10'        Alignment = taRightJus' +
+        'tify'#13#10'        VertAlign = vaTop'#13#10'        RotateFont = True'#13#10'    ' +
+        '    CellFrame.Color = clWhite'#13#10'        CellFrame.Transparent = T' +
+        'rue'#13#10'        CellFrame.AutoFrame = False'#13#10'        CellFrame.Auto' +
+        'FrameMargin = 0'#13#10'        CellFrame.Visible = False'#13#10'        Visi' +
+        'ble = True'#13#10'        ReadOnly = False'#13#10'        Transparency = 0'#13#10 +
+        '      end>'#13#10'    Visible = True'#13#10'    Layer = 0'#13#10'    Transparency ' +
+        '= 0'#13#10'    LineStyle = lsLine'#13#10'    Color = clBlack'#13#10'    Collapsed ' +
+        '= False'#13#10'    Handles = <'#13#10'      item'#13#10'        OrX = 273.50000000' +
+        '0000000000'#13#10'        OrY = 144.000000000000000000'#13#10'        Style ' +
+        '= hsSize'#13#10'      end'#13#10'      item'#13#10'        OrX = 461.0000000000000' +
+        '00000'#13#10'        OrY = 129.000000000000000000'#13#10'        Style = hsS' +
+        'ize'#13#10'      end>'#13#10'    LinkPoints = <'#13#10'      item'#13#10'        Anchor ' +
+        '= __DSOwner___.TableDiagramBlock3'#13#10'        AnchorIndex = 1'#13#10'    ' +
+        '    Collapsable = False'#13#10'        Collapsed = False'#13#10'        Link' +
+        'Constraint = lcAll'#13#10'        Visible = True'#13#10'      end'#13#10'      ite' +
+        'm'#13#10'        Anchor = __DSOwner___.TableDiagramBlock2'#13#10'        Anc' +
+        'horIndex = 0'#13#10'        Collapsable = False'#13#10'        Collapsed = F' +
+        'alse'#13#10'        LinkConstraint = lcAll'#13#10'        Visible = True'#13#10'  ' +
+        '    end>'#13#10'    RelID = 1'#13#10'  end'#13#10'  object RelationshipDiagramLine' +
+        '2: TRelationshipDiagramLine'#13#10'    Pen.Style = psDot'#13#10'    SourceAr' +
+        'row.Shape = asNone'#13#10'    SourceArrow.Width = 10'#13#10'    SourceArrow.' +
+        'Height = 10'#13#10'    SourceArrow.Brush.Color = clBlack'#13#10'    TargetAr' +
+        'row.Shape = asNone'#13#10'    TargetArrow.Width = 10'#13#10'    TargetArrow.' +
+        'Height = 10'#13#10'    TargetArrow.Brush.Color = clBlack'#13#10'    Cursor =' +
+        ' crDefault'#13#10'    TextCells = <'#13#10'      item'#13#10'        DControlAngle' +
+        ' = True'#13#10'        Left = -4.000000000000000000'#13#10'        Top = 127' +
+        '.000000000000000000'#13#10'        Width = 300.000000000000000000'#13#10'   ' +
+        '     Height = 100.000000000000000000'#13#10'        Clip = False'#13#10'    ' +
+        '    WordWrap = True'#13#10'        DControlFont = True'#13#10'        Alignm' +
+        'ent = taCenter'#13#10'        VertAlign = vaTop'#13#10'        RotateFont = ' +
+        'True'#13#10'        CellFrame.Color = clWhite'#13#10'        CellFrame.Pen.S' +
+        'tyle = psClear'#13#10'        CellFrame.Transparent = False'#13#10'        C' +
+        'ellFrame.AutoFrame = True'#13#10'        CellFrame.AutoFrameMargin = 0' +
+        #13#10'        CellFrame.Visible = True'#13#10'        Visible = True'#13#10'    ' +
+        '    ReadOnly = False'#13#10'        Transparency = 0'#13#10'      end'#13#10'     ' +
+        ' item'#13#10'        DControlAngle = True'#13#10'        Left = -207.3493445' +
+        '84205900000'#13#10'        Top = 148.754591595566400000'#13#10'        Width' +
+        ' = 400.000000000000000000'#13#10'        Height = 100.0000000000000000' +
+        '00'#13#10'        Clip = False'#13#10'        WordWrap = True'#13#10'        DCont' +
+        'rolFont = True'#13#10'        Alignment = taRightJustify'#13#10'        Vert' +
+        'Align = vaTop'#13#10'        RotateFont = True'#13#10'        CellFrame.Colo' +
+        'r = clWhite'#13#10'        CellFrame.Transparent = True'#13#10'        CellF' +
+        'rame.AutoFrame = False'#13#10'        CellFrame.AutoFrameMargin = 0'#13#10' ' +
+        '       CellFrame.Visible = False'#13#10'        Visible = True'#13#10'      ' +
+        '  ReadOnly = False'#13#10'        Transparency = 0'#13#10'      end'#13#10'      i' +
+        'tem'#13#10'        DControlAngle = True'#13#10'        Left = 97.91328002697' +
+        '6680000'#13#10'        Top = 124.626720710024900000'#13#10'        Width = 4' +
+        '00.000000000000000000'#13#10'        Height = 100.000000000000000000'#13#10 +
+        '        Clip = False'#13#10'        WordWrap = True'#13#10'        DControlF' +
+        'ont = True'#13#10'        Alignment = taLeftJustify'#13#10'        VertAlign' +
+        ' = vaTop'#13#10'        RotateFont = True'#13#10'        CellFrame.Color = c' +
+        'lWhite'#13#10'        CellFrame.Transparent = True'#13#10'        CellFrame.' +
+        'AutoFrame = False'#13#10'        CellFrame.AutoFrameMargin = 0'#13#10'      ' +
+        '  CellFrame.Visible = False'#13#10'        Visible = True'#13#10'        Rea' +
+        'dOnly = False'#13#10'        Transparency = 0'#13#10'      end'#13#10'      item'#13#10 +
+        '        DControlAngle = True'#13#10'        Left = -202.41328002697670' +
+        '0000'#13#10'        Top = 29.373279289975100000'#13#10'        Width = 400.0' +
+        '00000000000000000'#13#10'        Height = 100.000000000000000000'#13#10'    ' +
+        '    Clip = False'#13#10'        WordWrap = True'#13#10'        DControlFont ' +
+        '= True'#13#10'        Alignment = taRightJustify'#13#10'        VertAlign = ' +
+        'vaBottom'#13#10'        RotateFont = True'#13#10'        CellFrame.Color = c' +
+        'lWhite'#13#10'        CellFrame.Transparent = True'#13#10'        CellFrame.' +
+        'AutoFrame = False'#13#10'        CellFrame.AutoFrameMargin = 0'#13#10'      ' +
+        '  CellFrame.Visible = False'#13#10'        Visible = True'#13#10'        Rea' +
+        'dOnly = False'#13#10'        Transparency = 0'#13#10'      end'#13#10'      item'#13#10 +
+        '        DControlAngle = True'#13#10'        Left = 102.849344584205900' +
+        '000'#13#10'        Top = 5.245408404433590000'#13#10'        Width = 400.000' +
+        '000000000000000'#13#10'        Height = 100.000000000000000000'#13#10'      ' +
+        '  Clip = False'#13#10'        WordWrap = True'#13#10'        DControlFont = ' +
+        'True'#13#10'        Alignment = taLeftJustify'#13#10'        VertAlign = vaB' +
+        'ottom'#13#10'        RotateFont = True'#13#10'        CellFrame.Color = clWh' +
+        'ite'#13#10'        CellFrame.Transparent = True'#13#10'        CellFrame.Aut' +
+        'oFrame = False'#13#10'        CellFrame.AutoFrameMargin = 0'#13#10'        C' +
+        'ellFrame.Visible = False'#13#10'        Visible = True'#13#10'        ReadOn' +
+        'ly = False'#13#10'        Transparency = 0'#13#10'      end>'#13#10'    Visible = ' +
+        'True'#13#10'    Layer = 0'#13#10'    Transparency = 0'#13#10'    LineStyle = lsLin' +
+        'e'#13#10'    Color = clBlack'#13#10'    Collapsed = False'#13#10'    Handles = <'#13#10 +
+        '      item'#13#10'        OrX = 214.500000000000000000'#13#10'        OrY = ' +
+        '144.000000000000000000'#13#10'        Style = hsSize'#13#10'      end'#13#10'     ' +
+        ' item'#13#10'        OrX = 81.000000000000000000'#13#10'        OrY = 110.00' +
+        '0000000000000000'#13#10'        Style = hsSize'#13#10'      end>'#13#10'    LinkPo' +
+        'ints = <'#13#10'      item'#13#10'        Anchor = __DSOwner___.TableDiagram' +
+        'Block3'#13#10'        AnchorIndex = 0'#13#10'        Collapsable = False'#13#10'  ' +
+        '      Collapsed = False'#13#10'        LinkConstraint = lcAll'#13#10'       ' +
+        ' Visible = True'#13#10'      end'#13#10'      item'#13#10'        Anchor = __DSOwn' +
+        'er___.TableDiagramBlock1'#13#10'        AnchorIndex = 0'#13#10'        Colla' +
+        'psable = False'#13#10'        Collapsed = False'#13#10'        LinkConstrain' +
+        't = lcAll'#13#10'        Visible = True'#13#10'      end>'#13#10'    RelID = 2'#13#10'  ' +
+        'end'#13#10'end'#13#10
+    end>
+  AureliusExportOptions = 
+    '<Mappings OmitDictionary="true" RegisterEntities="true" DefaultA' +
+    'ssociationCascadeDefinition="allbutremove">'#13#10'  <ProjectFile/>'#13#10' ' +
+    ' <OutputDir>Z:\ProductionHD\My Documents\Scripta\Books\ORM in De' +
+    'lphi\Code\Full</OutputDir>'#13#10'  <MainUnitName>Entities</MainUnitNa' +
+    'me>'#13#10'  <DictionaryName>Dic</DictionaryName>'#13#10'  <DictionaryUnitNa' +
+    'me/>'#13#10'  <Script>                   procedure OnClassGenerated(Ar' +
+    'gs: TClassGeneratedArgs);      '#13#10'var'#13#10'  field: TCodeTypeMember;'#13 +
+    #10'  attr: TCodeAttributeDeclaration;'#13#10'  i: integer;'#13#10'begin'#13#10'  if ' +
+    'Args.CodeType.Name = '#39'TAgent'#39' then     '#13#10'  begin '#13#10'    // Add th' +
+    'e Base class       '#13#10'    Args.CodeType.BaseType:=TCodeTypeRefere' +
+    'nce.Create('#39'TBase'#39');   '#13#10'    '#13#10'    // Remove the ID Field'#13#10'    f' +
+    'or i:=Args.CodeType.Members.Count - 1 downto 0  do'#13#10'    begin   ' +
+    '                                               '#13#10'      field:=Ar' +
+    'gs.CodeType.Members.Items[i];   '#13#10'      if field.Name='#39'FID'#39' then' +
+    #13#10'      begin                              '#13#10'        Args.CodeTy' +
+    'pe.Members.Delete(i);'#13#10'        break;'#13#10'      end;               ' +
+    '              '#13#10'    end;      '#13#10'                        '#13#10'    //' +
+    ' Remove the ID property  '#13#10'    for i:=Args.CodeType.Members.Coun' +
+    't - 1 downto 0 do                             '#13#10'    begin       ' +
+    '                                           '#13#10'      field:=Args.C' +
+    'odeType.Members.Items[i];   '#13#10'      if field.Name='#39'ID'#39' then'#13#10'   ' +
+    '   begin            '#13#10'        Args.CodeType.Members.Delete(i);'#13#10 +
+    '        break;                                      '#13#10'      end;' +
+    '        '#13#10'    end;    '#13#10'    '#13#10'    // Remove the ID Attribute'#13#10'  ' +
+    '  for i:=Args.CodeType.CustomAttributes.Count - 1 downto 0 do'#13#10' ' +
+    '   begin'#13#10'      attr:=Args.CodeType.CustomAttributes.Items[i];  ' +
+    ' '#13#10'      if attr.Name='#39'Id'#39' then'#13#10'      begin                   '#13 +
+    #10'        Args.CodeType.CustomAttributes.Delete(i);'#13#10'        brea' +
+    'k;'#13#10'      end;                                '#13#10'    end;        ' +
+    '  '#13#10#13#10'  end;'#13#10'  if Args.CodeType.Name = '#39'TBase'#39' then     '#13#10'  beg' +
+    'in   '#13#10'    Args.CodeType.AddAttribute('#39'Inheritance'#39').AddRawArgum' +
+    'ent('#39'TInheritanceStrategy.JoinedTables'#39'); '#13#10'  end;'#13#10'end;        ' +
+    '                                                             </S' +
+    'cript>'#13#10'  <TableNaming Source="caption" Format="T%s"/>'#13#10'  <Field' +
+    'Naming Source="caption" Format="%s"/>'#13#10'  <AssociationNaming Sour' +
+    'ce="ChildFieldCaption" Format="%s"/>'#13#10'  <ManyValuedNaming Source' +
+    '="ChildTableCaption" Format="%sList"/>'#13#10'  <Tables>'#13#10'    <Table T' +
+    'ableId="4" ModelNames="Database" Sequence="None" Exclude="true"/' +
+    '>'#13#10'    <Table TableId="6" ModelNames="Database" Exclude="true"/>' +
+    #13#10'  </Tables>'#13#10'  <Associations>'#13#10'    <Association AssociationId=' +
+    '"1" ManyValuedInclude="true"/>'#13#10'    <Association AssociationId="' +
+    '2" ManyValuedInclude="true"/>'#13#10'  </Associations>'#13#10'</Mappings>'#13#10
+end

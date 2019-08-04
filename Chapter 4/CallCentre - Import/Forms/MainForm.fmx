@@ -1,0 +1,1210 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Call Centre'
+  ClientHeight = 649
+  ClientWidth = 1050
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Margins.Top = 10.000000000000000000
+    Size.Width = 1050.000000000000000000
+    Size.Height = 639.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 2
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    OnChange = TabControl1Change
+    Sizes = (
+      1050s
+      613s
+      1050s
+      613s
+      1050s
+      613s
+      1050s
+      613s)
+    object tiDashboard: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 78.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Dashboard'
+      ExplicitSize.cx = 78.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout11: TLayout
+        Align = Left
+        Size.Width = 65.000000000000000000
+        Size.Height = 613.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle1: TRectangle
+          Align = Client
+          Fill.Color = claLavender
+          Size.Width = 65.000000000000000000
+          Size.Height = 353.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claLavender
+        end
+        object cbWeek1: TCornerButton
+          StaysPressed = True
+          Align = Top
+          Corners = [TopLeft, TopRight]
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 65.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Week 1'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = cbWeek1Click
+        end
+        object cbWeek2: TCornerButton
+          Tag = 1
+          StaysPressed = True
+          Align = Top
+          Corners = []
+          Position.Y = 65.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 65.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Week 2'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = cbWeek2Click
+        end
+        object cbWeek4: TCornerButton
+          Tag = 3
+          StaysPressed = True
+          Align = Top
+          Corners = [BottomLeft, BottomRight]
+          Position.Y = 195.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 65.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Week 4'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = cbWeek4Click
+        end
+        object cbWeek3: TCornerButton
+          Tag = 2
+          StaysPressed = True
+          Align = Top
+          Corners = []
+          Position.Y = 130.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 65.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Week 3'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = cbWeek3Click
+        end
+      end
+      object Layout12: TLayout
+        Align = Client
+        Size.Width = 985.000000000000000000
+        Size.Height = 613.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object GridPanelLayout1: TGridPanelLayout
+          Align = Top
+          Size.Width = 985.000000000000000000
+          Size.Height = 105.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end
+            item
+              Value = 20.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 1
+              Control = Layout7
+              Row = 0
+            end
+            item
+              Column = 2
+              Control = Layout8
+              Row = 0
+            end
+            item
+              Column = 3
+              Control = Layout9
+              Row = 0
+            end
+            item
+              Column = 4
+              Control = Layout10
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Layout13
+              Row = 0
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object Layout7: TLayout
+            Align = Client
+            Size.Width = 197.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object lbTotalCalls: TLabel
+              Align = Top
+              StyledSettings = [Family, FontColor]
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 26.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Total Calls'
+              TabOrder = 1
+            end
+            object lbTotalCallsValue: TLabel
+              Align = Top
+              StyledSettings = [Family]
+              Position.Y = 49.000000000000000000
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claBlue
+              TextSettings.HorzAlign = Center
+              Text = '0'
+              TabOrder = 0
+            end
+          end
+          object Layout8: TLayout
+            Align = Client
+            Size.Width = 197.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object lbAnswerSpeed: TLabel
+              Align = Top
+              StyledSettings = [Family, FontColor]
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 26.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Answer Speed (sec)'
+              TabOrder = 1
+            end
+            object lbAnswerSpeedValue: TLabel
+              Align = Top
+              StyledSettings = [Family]
+              Position.Y = 49.000000000000000000
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claBlue
+              TextSettings.HorzAlign = Center
+              Text = '00.0'
+              TabOrder = 0
+            end
+          end
+          object Layout9: TLayout
+            Align = Client
+            Size.Width = 197.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lbAbandonRate: TLabel
+              Align = Top
+              StyledSettings = [Family, FontColor]
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 26.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Abandon Rate'
+              TabOrder = 1
+            end
+            object lbAbandonRateValue: TLabel
+              Align = Top
+              StyledSettings = [Family]
+              Position.Y = 49.000000000000000000
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claBlue
+              TextSettings.HorzAlign = Center
+              Text = '00.00%'
+              TabOrder = 0
+            end
+          end
+          object Layout10: TLayout
+            Align = Client
+            Size.Width = 197.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lbCallsMinute: TLabel
+              Align = Top
+              StyledSettings = [Family, FontColor]
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 26.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Calls/Minute'
+              TabOrder = 1
+            end
+            object lbCallsMinuteValue: TLabel
+              Align = Top
+              StyledSettings = [Family]
+              Position.Y = 49.000000000000000000
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claBlue
+              TextSettings.HorzAlign = Center
+              Text = '00.000'
+              TabOrder = 0
+            end
+          end
+          object Layout13: TLayout
+            Align = Client
+            Size.Width = 197.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object lbSatisfaction: TLabel
+              Align = Top
+              StyledSettings = [Family, FontColor]
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 26.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'Satisfaction Score'
+              TabOrder = 1
+            end
+            object lbSatisfactionValue: TLabel
+              Align = Top
+              StyledSettings = [Family]
+              Position.Y = 49.000000000000000000
+              Size.Width = 197.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claBlue
+              TextSettings.HorzAlign = Center
+              Text = '0.00'
+              TabOrder = 0
+            end
+          end
+        end
+        object GridPanelLayout2: TGridPanelLayout
+          Align = Client
+          Size.Width = 985.000000000000000000
+          Size.Height = 508.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ColumnCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = sgDashboardAgents
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = ctSatisfactionScore
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = ctAbandonRate
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = Layout14
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object sgDashboardAgents: TStringGrid
+            Align = Client
+            CanFocus = True
+            ClipChildren = True
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 472.500000000000000000
+            Size.Height = 234.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            RowCount = 0
+            Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+            Viewport.Width = 472.500000000000000000
+            Viewport.Height = 234.000000000000000000
+            object scDashboardAgentsName: TStringColumn
+              Header = 'Agent'
+            end
+            object scDashboardAgentsTotalCalls: TStringColumn
+              Header = 'Total Calls'
+              Size.Width = 70.000000000000000000
+            end
+            object scDashboardAgentsCallsAnswered: TStringColumn
+              Header = 'Calls Answered'
+              Size.Width = 95.000000000000000000
+            end
+            object scDashboardAgentsSpeedAnswer: TStringColumn
+              Header = 'Answer Speed (sec)'
+              Size.Width = 110.000000000000000000
+            end
+            object scDashboardAgentsCallResolution: TStringColumn
+              Header = 'Call Resolution'
+            end
+            object scDashboardAgentsCRTrend: TStringColumn
+              Header = 'CR Trend'
+              Size.Width = 70.000000000000000000
+            end
+          end
+          object ctSatisfactionScore: TChart
+            BackImage.Inside = True
+            BackWall.Brush.Kind = None
+            BackWall.Color = xFFAB2525
+            BackWall.Pen.Style = psClear
+            BackWall.Pen.Fill.Kind = None
+            BackWall.Emboss.Color = claBlack
+            Border.Style = psUserStyle
+            Foot.Font.StyleExt = {00040000000200000004000000}
+            Legend.Title.Font.StyleExt = {00070000000000000004000000}
+            Legend.Visible = False
+            PrintProportional = False
+            SubFoot.Font.StyleExt = {00040000000200000004000000}
+            Title.Font.Size = 16.000000000000000000
+            Title.Font.Style = [fsBold]
+            Title.Font.Color = claBlack
+            Title.Font.Brush.Color = claBlack
+            Title.Font.StyleExt = {00070000000000000004000000}
+            Title.Text.Strings = (
+              'Satisfaction Score By Agent')
+            BottomAxis.Grid.Visible = False
+            Frame.Style = psClear
+            Frame.Fill.Kind = None
+            LeftAxis.Grid.Visible = False
+            View3D = False
+            View3DWalls = False
+            Zoom.Brush.Kind = None
+            Zoom.Pen.Fill.Color = claSilver
+            Align = Client
+            BevelOuter = bvNone
+            Color = claNull
+            TabOrder = 2
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 472.500000000000000000
+            Size.Height = 234.000000000000000000
+            Size.PlatformDefault = False
+            ColorPaletteIndex = 13
+            object Series1: THorizBarSeries
+              HoverElement = []
+              BarBrush.Gradient.Direction = gdLeftRight
+              SeriesColor = xFF8FABDE
+              Gradient.Direction = gdLeftRight
+              XValues.Name = 'Bar'
+              XValues.Order = loNone
+              YValues.Name = 'Y'
+              YValues.Order = loNone
+            end
+          end
+          object ctAbandonRate: TChart
+            BackImage.Inside = True
+            BackWall.Brush.Kind = None
+            BackWall.Color = xFFAB2525
+            BackWall.Pen.Style = psClear
+            BackWall.Pen.Fill.Kind = None
+            BackWall.Emboss.Color = claBlack
+            Border.Style = psUserStyle
+            Foot.Font.StyleExt = {00040000000200000004000000}
+            Legend.Title.Font.StyleExt = {00070000000000000004000000}
+            Legend.Visible = False
+            PrintProportional = False
+            SubFoot.Font.StyleExt = {00040000000200000004000000}
+            Title.Font.Size = 16.000000000000000000
+            Title.Font.Style = [fsBold]
+            Title.Font.Color = claBlack
+            Title.Font.Brush.Color = claBlack
+            Title.Font.StyleExt = {00070000000000000004000000}
+            Title.Text.Strings = (
+              'Call Abandon Rate By Department')
+            BottomAxis.Grid.Visible = False
+            Frame.Style = psClear
+            Frame.Fill.Kind = None
+            LeftAxis.Grid.Visible = False
+            View3D = False
+            View3DWalls = False
+            Zoom.Brush.Kind = None
+            Zoom.Pen.Fill.Color = claSilver
+            Align = Client
+            BevelOuter = bvNone
+            Color = claNull
+            TabOrder = 1
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 472.500000000000000000
+            Size.Height = 234.000000000000000000
+            Size.PlatformDefault = False
+            ColorPaletteIndex = 13
+            object HorizBarSeries1: TBarSeries
+              HoverElement = []
+              BarBrush.Gradient.Direction = gdLeftRight
+              SeriesColor = xFFA8DF81
+              Gradient.Direction = gdLeftRight
+              XValues.Name = 'X'
+              XValues.Order = loNone
+              YValues.Name = 'Bar'
+              YValues.Order = loNone
+            end
+          end
+          object Layout14: TLayout
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 472.500000000000000000
+            Size.Height = 234.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Rectangle2: TRectangle
+              Align = Top
+              Fill.Color = claDodgerblue
+              Margins.Top = 10.000000000000000000
+              Position.Y = 10.000000000000000000
+              Size.Width = 472.500000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claDodgerblue
+              object Label1: TLabel
+                Align = Client
+                StyledSettings = [Family]
+                Margins.Left = 10.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Size.Width = 452.500000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 16.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'SLA Limits'
+                TabOrder = 0
+              end
+            end
+            object Layout15: TLayout
+              Align = Top
+              Margins.Top = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Position.Y = 70.000000000000000000
+              Size.Width = 472.500000000000000000
+              Size.Height = 53.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object lbAnsweredLess180: TLabel
+                Align = Client
+                StyledSettings = [Family, FontColor]
+                Size.Width = 280.500000000000000000
+                Size.Height = 53.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 26.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.HorzAlign = Center
+                Text = 'Calls answered in <180 secs'
+                TabOrder = 1
+              end
+              object lbAnsweredLess180Value: TLabel
+                Align = Right
+                StyledSettings = [Family]
+                Position.X = 280.500000000000000000
+                Size.Width = 192.000000000000000000
+                Size.Height = 53.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 24.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claGreen
+                TextSettings.HorzAlign = Center
+                Text = '0.00'
+                TabOrder = 0
+              end
+            end
+            object Layout16: TLayout
+              Align = Top
+              Margins.Top = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Position.Y = 143.000000000000000000
+              Size.Width = 472.500000000000000000
+              Size.Height = 53.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object lbSatisfactionScoreLess3: TLabel
+                Align = Client
+                StyledSettings = [Family, FontColor]
+                Size.Width = 280.500000000000000000
+                Size.Height = 53.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 26.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.HorzAlign = Center
+                Text = 'Calls with Satisfaction Score <3'
+                TabOrder = 1
+              end
+              object lbSatisfactionScoreLess3Value: TLabel
+                Align = Right
+                StyledSettings = [Family]
+                Position.X = 280.500000000000000000
+                Size.Width = 192.000000000000000000
+                Size.Height = 53.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 24.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claRed
+                TextSettings.HorzAlign = Center
+                Text = '0 (00.00%)'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+    object tiDepartments: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 89.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Departments'
+      ExplicitSize.cx = 89.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout4: TLayout
+        Align = Top
+        Size.Width = 1050.000000000000000000
+        Size.Height = 281.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object sgDepartments: TStringGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 1040.000000000000000000
+          Size.Height = 229.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+          OnSelectCell = sgDepartmentsSelectCell
+          Viewport.Width = 1040.000000000000000000
+          Viewport.Height = 229.000000000000000000
+          object scDepartmentNr: TStringColumn
+            Header = 'Nr'
+            Size.Width = 50.000000000000000000
+          end
+          object scDepartmentDescription: TStringColumn
+            Header = 'Department'
+            Size.Width = 558.000000000000000000
+          end
+          object scDepartmentID: TStringColumn
+            Header = 'ID'
+            Size.Width = 300.000000000000000000
+          end
+        end
+        object Layout5: TLayout
+          Align = Bottom
+          Margins.Bottom = 10.000000000000000000
+          Position.Y = 249.000000000000000000
+          Size.Width = 1050.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btAddDepartment: TButton
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 119.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Add Department'
+            OnClick = btAddDepartmentClick
+          end
+          object btEditDepartment: TButton
+            Align = Left
+            Enabled = False
+            Margins.Left = 10.000000000000000000
+            Position.X = 134.000000000000000000
+            Size.Width = 119.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Edit Department'
+            OnClick = btEditDepartmentClick
+          end
+          object btDeleteDepartment: TButton
+            Align = Left
+            Enabled = False
+            Margins.Left = 10.000000000000000000
+            Position.X = 263.000000000000000000
+            Size.Width = 119.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Delete Department'
+            OnClick = btDeleteDepartmentClick
+          end
+          object lbDepartmentTime: TLabel
+            Align = FitRight
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 10.000000000000000000
+            Position.X = 884.705810546875000000
+            Size.Width = 155.294189453125000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 9.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = '0 msec'
+            TabOrder = 3
+          end
+        end
+      end
+      object Layout6: TLayout
+        Align = Client
+        Size.Width = 1050.000000000000000000
+        Size.Height = 332.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object sgDepartmentDetails: TStringGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 1040.000000000000000000
+          Size.Height = 312.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+          Viewport.Width = 1040.000000000000000000
+          Viewport.Height = 312.000000000000000000
+          object scDepartmentDetailsNr: TStringColumn
+            Header = 'Nr'
+            Size.Width = 50.000000000000000000
+          end
+          object scDepartmentDetailsCallID: TStringColumn
+            Header = 'Call ID'
+            Size.Width = 50.000000000000000000
+          end
+          object scDepartmentDetailsDate: TDateColumn
+            Header = 'Date'
+            Size.Width = 70.000000000000000000
+          end
+          object scDepartmentDetailsEntry: TTimeColumn
+            Header = 'Entry Time'
+            Size.Width = 70.000000000000000000
+          end
+          object scDepartmentDetailsWaiting: TTimeColumn
+            Header = 'Waiting Time'
+            Size.Width = 80.000000000000000000
+          end
+          object scDepartmentDetailsDuration: TTimeColumn
+            Header = 'Call Duration'
+            Size.Width = 80.000000000000000000
+          end
+          object scDepartmentDetailsResolved: TCheckColumn
+            Header = 'Resolved'
+          end
+          object scDepartmentDetails: TIntegerColumn
+            Header = 'Satisfaction Rate'
+          end
+        end
+        object lbDepartmentDetailsNoEntries: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Size.Width = 1050.000000000000000000
+          Size.Height = 332.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 32.000000000000000000
+          TextSettings.FontColor = claGray
+          TextSettings.HorzAlign = Center
+          Text = 'No entries found'
+          TabOrder = 1
+        end
+      end
+    end
+    object tiAgents: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 58.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Agents'
+      ExplicitSize.cx = 58.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout2: TLayout
+        Align = Top
+        Size.Width = 1050.000000000000000000
+        Size.Height = 281.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Layout1: TLayout
+          Align = Bottom
+          Margins.Bottom = 10.000000000000000000
+          Position.Y = 249.000000000000000000
+          Size.Width = 1050.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object btAddAgent: TButton
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            TabOrder = 2
+            Text = 'Add Agent'
+            OnClick = btAddAgentClick
+          end
+          object btEditAgent: TButton
+            Align = Left
+            Enabled = False
+            Margins.Left = 10.000000000000000000
+            Position.X = 95.000000000000000000
+            TabOrder = 1
+            Text = 'Edit Agent'
+            OnClick = btEditAgentClick
+          end
+          object btDeleteAgent: TButton
+            Align = Left
+            Enabled = False
+            Margins.Left = 10.000000000000000000
+            Position.X = 185.000000000000000000
+            TabOrder = 0
+            Text = 'Delete Agent'
+            OnClick = btDeleteAgentClick
+          end
+          object lbAgentTime: TLabel
+            Align = FitRight
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 10.000000000000000000
+            Position.X = 885.000000000000000000
+            Size.Width = 155.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 9.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = '0 msec'
+            TabOrder = 3
+          end
+        end
+        object Layout17: TLayout
+          Align = Client
+          Size.Width = 1050.000000000000000000
+          Size.Height = 249.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object sgAgents: TStringGrid
+            Align = Client
+            CanFocus = True
+            ClipChildren = True
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 692.000000000000000000
+            Size.Height = 229.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+            OnSelectCell = sgAgentsSelectCell
+            Viewport.Width = 672.000000000000000000
+            Viewport.Height = 188.000000000000000000
+            object scAgentNr: TStringColumn
+              Header = 'Nr'
+              Size.Width = 50.000000000000000000
+            end
+            object scAgentDescriptionn: TStringColumn
+              Header = 'Agent'
+              Size.Width = 558.000000000000000000
+            end
+            object scAgentID: TStringColumn
+              Header = 'ID'
+              Size.Width = 140.000000000000000000
+            end
+          end
+          object Layout18: TLayout
+            Align = Right
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 712.000000000000000000
+            Size.Width = 328.000000000000000000
+            Size.Height = 249.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Layout19: TLayout
+              Align = Left
+              Margins.Left = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Position.X = 10.000000000000000000
+              Size.Width = 180.000000000000000000
+              Size.Height = 249.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object imPhoto: TImage
+                MultiResBitmap = <
+                  item
+                  end>
+                Align = Top
+                Margins.Top = 10.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 180.000000000000000000
+                Size.Height = 140.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object btAddPhoto: TButton
+                Align = Top
+                Enabled = False
+                Position.Y = 160.000000000000000000
+                Size.Width = 180.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Add Photo'
+                OnClick = btAddPhotoClick
+              end
+              object btDeletePhoto: TButton
+                Align = Top
+                Enabled = False
+                Margins.Top = 10.000000000000000000
+                Position.Y = 192.000000000000000000
+                Size.Width = 180.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Delete Photo'
+                OnClick = btDeletePhotoClick
+              end
+            end
+            object Layout20: TLayout
+              Align = Client
+              Size.Width = 128.000000000000000000
+              Size.Height = 249.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Label4: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Create User'
+                TabOrder = 3
+              end
+              object lbCreateUser: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 37.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Not Assigned'
+                TabOrder = 1
+              end
+              object Label5: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 202.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Modify Time Stamp'
+                TabOrder = 2
+              end
+              object lbCreateTS: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 101.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Not Assigned'
+                TabOrder = 0
+              end
+              object lbModifyUser: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 138.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Modify User'
+                TabOrder = 4
+              end
+              object lbModifyTS: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 229.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Not Assigned'
+                TabOrder = 5
+              end
+              object Label8: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 74.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Create Time Stamp'
+                TabOrder = 6
+              end
+              object Label9: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 165.000000000000000000
+                Size.Width = 118.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Not Assigned'
+                TabOrder = 7
+              end
+            end
+          end
+        end
+      end
+      object Layout3: TLayout
+        Align = Client
+        Size.Width = 1050.000000000000000000
+        Size.Height = 332.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object sgAgentDetails: TStringGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 1040.000000000000000000
+          Size.Height = 312.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick, AutoDisplacement]
+          Viewport.Width = 1020.000000000000000000
+          Viewport.Height = 287.000000000000000000
+          object scAgentDetailsNr: TStringColumn
+            Header = 'Nr'
+            Size.Width = 50.000000000000000000
+          end
+          object scAgentDetailsCallID: TStringColumn
+            Header = 'Call ID'
+            Size.Width = 50.000000000000000000
+          end
+          object scAgentDetailsDate: TDateColumn
+            Header = 'Date'
+            Size.Width = 70.000000000000000000
+          end
+          object scAgentDetailsEntry: TTimeColumn
+            Header = 'Entry Time'
+            Size.Width = 70.000000000000000000
+          end
+          object scAgentDetailsWaiting: TTimeColumn
+            Header = 'Waiting Time'
+            Size.Width = 80.000000000000000000
+          end
+          object scAgentDetailsDuration: TTimeColumn
+            Header = 'Call Duration'
+            Size.Width = 80.000000000000000000
+          end
+          object scAgentDetailsResolved: TCheckColumn
+            Header = 'Resolved'
+          end
+          object scAgentDetailsRate: TIntegerColumn
+            Header = 'Satisfaction Rate'
+          end
+        end
+        object lbAgentDetailsNoEntries: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Size.Width = 1050.000000000000000000
+          Size.Height = 332.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 32.000000000000000000
+          TextSettings.FontColor = claGray
+          TextSettings.HorzAlign = Center
+          Text = 'No entries found'
+          TabOrder = 1
+        end
+      end
+    end
+    object tiImport: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 56.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Import'
+      ExplicitSize.cx = 56.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inline FrameImport: TFrameImport
+        Align = Client
+        Size.Width = 1050.000000000000000000
+        Size.Height = 613.000000000000000000
+        Size.PlatformDefault = False
+        inherited Layout21: TLayout
+          Size.Width = 1030.000000000000000000
+          inherited btImport: TButton
+            OnClick = FrameImportbtImportClick
+          end
+        end
+        inherited pbImport: TProgressBar
+          Size.Width = 1030.000000000000000000
+        end
+        inherited lbImport: TLabel
+          Size.Width = 1030.000000000000000000
+        end
+        inherited lbTime: TLabel
+          Size.Width = 1030.000000000000000000
+          TextSettings.Font.StyleExt = {00040000000200000004000000}
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 512
+    Top = 8
+  end
+end

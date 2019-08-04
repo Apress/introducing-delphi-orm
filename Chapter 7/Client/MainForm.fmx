@@ -1,0 +1,144 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 707
+  ClientWidth = 994
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object sgPosts: TStringGrid
+    Align = Top
+    CanFocus = True
+    ClipChildren = True
+    Position.Y = 65.000000000000000000
+    Size.Width = 994.000000000000000000
+    Size.Height = 273.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    StyledSettings = [Family, Style, FontColor]
+    TabOrder = 1
+    RowHeight = 32.000000000000000000
+    Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
+    OnSelectCell = sgPostsSelectCell
+    Viewport.Width = 974.000000000000000000
+    Viewport.Height = 232.000000000000000000
+    object scNr: TStringColumn
+    end
+    object scTitle: TStringColumn
+      Header = 'Title'
+      Size.Width = 392.000000000000000000
+    end
+    object scBody: TStringColumn
+      Header = 'Body'
+      Size.Width = 479.000000000000000000
+    end
+    object scCount: TIntegerColumn
+      Header = 'Comments'
+    end
+    object scUser: TStringColumn
+      Header = 'User'
+    end
+  end
+  object sgComments: TStringGrid
+    Align = Top
+    CanFocus = True
+    ClipChildren = True
+    Position.Y = 408.000000000000000000
+    Size.Width = 994.000000000000000000
+    Size.Height = 513.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    StyledSettings = [Family, Style, FontColor]
+    TabOrder = 0
+    RowHeight = 32.000000000000000000
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+    Viewport.Width = 974.000000000000000000
+    Viewport.Height = 472.000000000000000000
+    object scName: TStringColumn
+      Header = 'Name'
+      Size.Width = 289.000000000000000000
+    end
+    object scCommentsBody: TStringColumn
+      Header = 'Body'
+      Size.Width = 487.000000000000000000
+    end
+    object scEmail: TStringColumn
+      Header = 'Email'
+      Size.Width = 300.000000000000000000
+    end
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 994.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 974.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Posts'
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Align = Top
+    Position.Y = 343.000000000000000000
+    Size.Width = 994.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Label2: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 974.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Comments'
+      TabOrder = 1
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Top
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 338.000000000000000000
+    Size.Width = 994.000000000000000000
+    Size.Height = 5.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object IdHTTP1: TIdHTTP
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 800
+    Top = 96
+  end
+end
