@@ -16,7 +16,6 @@ uses
 begin
   Application.Initialize;
   Application.CreateForm(TSQLiteConnection, SQLiteConnection);
-  Application.CreateForm(TSQLiteConnection, SQLiteConnection);
   Application.CreateForm(TFormMain, FormMain);
   Application.Run;
 end.

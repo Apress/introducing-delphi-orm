@@ -35,7 +35,6 @@ begin
   Application.Initialize;
   Application.CreateForm(TFormMain, FormMain);
   Application.CreateForm(TSQLiteConnection, SQLiteConnection);
-  Application.CreateForm(TSQLiteConnection, SQLiteConnection);
   Application.Run;
 end.
 
